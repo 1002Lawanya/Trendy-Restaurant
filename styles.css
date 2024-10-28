@@ -1,0 +1,642 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 700px;
+  background-image: url(images/banner1.jpg);
+
+  
+}
+
+#section2 {
+  height: 700px;
+  background-image: url(images/banner2.jpg);
+}
+#section3{
+    height: 700px;
+    background-image: url(images/banner4.jpg);
+}
+body {margin:0;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #111111d8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+li {
+  
+  background-color: #111111d8;
+  overflow: left;
+}
+
+li a {
+  float: left;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+  
+}
+
+li a:hover:not(.active) {
+  background-color: #111111d8;
+  color: rgb(236, 44, 19);
+
+}
+
+.active {
+  background-color: #111111d8;
+  color: rgb(223, 36, 11);
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: acumin-pro, system-ui, sans-serif;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 14px;
+  background-color: #f4f4f4;
+  align-items: start;
+  min-height: 100vh;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #0f0f0f;
+  background-color: #777474;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer address {
+  font-style: normal;
+  color: #0f0f0f;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(109, 7, 7);
+  border-radius: 100px;
+  color: #f7f1f1;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+
+
+.footer__addr {
+  flex: 1 0px;
+}
+
+
+.navbar-brand {
+  height: auto;
+}
+
+  
+
+.top {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size:60px;
+	z-index: 2;
+}
+
+.flip-box0 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 130%;
+  left: 2%;
+  
+}
+
+.flip-box0-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box0:hover .flip-box0-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box0-front, .flip-box0-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box0-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box0-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box1 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 130%;
+  left: 22%;
+  
+}
+
+.flip-box1-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box1-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box1-front, .flip-box1-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box1-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box1-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box2 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 130%;
+  left: 42%; 
+}
+
+.flip-box2-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box2:hover .flip-box2-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box2-front, .flip-box2-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box2-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box2-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box3 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 130%;
+  left: 62%;
+  
+}
+
+.flip-box3-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box3-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box3-front, .flip-box3-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box3-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box3-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+.flip-box4 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 130%;
+  left: 82%; 
+}
+
+.flip-box4-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box4:hover .flip-box4-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box4-front, .flip-box4-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box4-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box4-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box5 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 180%;
+  left: 2%; 
+}
+
+.flip-box5-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box5:hover .flip-box5-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box5-front, .flip-box5-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box5-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box5-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box6 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 180%;
+  left: 22%; 
+}
+
+.flip-box6-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box6:hover .flip-box6-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box6-front, .flip-box6-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box6-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box6-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box7 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 180%;
+  left: 42%; 
+}
+
+.flip-box7-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box7:hover .flip-box7-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box7-front, .flip-box7-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box7-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box7-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box8 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 180%;
+  left: 62%; 
+}
+
+.flip-box8-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box8:hover .flip-box8-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box8-front, .flip-box8-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box8-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box8-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-box9 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  position: absolute;
+  top: 180%;
+  left: 82%; 
+}
+
+.flip-box9-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box9:hover .flip-box9-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box9-front, .flip-box9-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box9-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box9-back {
+  background-color: #0e0d0d;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+.carousel_caption_channeling{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 105%;
+  height: 100%;
+  padding: 3rem 2.5rem;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.carousel_title_channeling{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-text-stroke: 1px white;
+  color:#3492fd;
+}
+.carousel_title_channeling_1{
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+   margin-top: 110px;
+   
+}
+.carousel_description_channeling{
+  margin-top: .75rem;
+  line-height: 150%;
+}

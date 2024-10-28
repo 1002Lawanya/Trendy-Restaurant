@@ -1,0 +1,23 @@
+# Resturant
+Online Food Ordering System Website using basic PHP, SQL, HTML, JS & CSS. You can use any one of XAMPP, WAMP or LAMP server to run the Web App on your local machine. It has a food ordering module for a customer. 
+It also provides menu, orders and user management module for admin.
+
+---->To Add Product<----
+Admin Login & Password 
+Login: admin 
+Password: admin
+
+
+ Any other user can view and order products by rejistering
+
+
+# Tools Used
+https://sourceforge.net/projects/wampserver/
+
+# How to Install and Use
+Download and install XAMPP/WAMP/LAMP server and download the files of this project
+Copy the folder of this project in your wamp/www/  folder
+Start wAMP. Start Apache and SQL server. Go to phpmyadmin and create a new database named 'shop_db and loginsystem'
+Go to the database created and click on 'Import' option in the top menu
+Upload the shop_db.sql and loginsystem.db files and import it
+Open your web browser and check if you got the website running on your localhost (http://localhost/web%20technolog)
